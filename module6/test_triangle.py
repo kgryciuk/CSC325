@@ -1,0 +1,19 @@
+import math
+from module6.triangle import is_valid_triangle, classify_triangle
+
+def test_is_valid_triangle():
+    assert is_valid_triangle(3, 4, 5) == True
+    assert is_valid_triangle(1, 1, 2) == False
+
+def test_equilateral_triangle():
+    assert classify_triangle(3, 3, 3) == "Equilateral"
+
+def test_isosceles_triangle():
+    assert classify_triangle(3, 3, 5) == "Isosceles"
+
+def test_scalene_triangle():
+    assert classify_triangle(3, 4, 5) == "Scalene"
+
+def test_right_triangle():
+    assert classify_triangle(3, 4, 5) == "Right"
+    assert classify_triangle(5, 5, 5* math.sqrt(2)) == "Right"
