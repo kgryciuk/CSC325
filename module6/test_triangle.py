@@ -12,8 +12,9 @@ def test_isosceles_triangle():
     assert classify_triangle(3, 3, 5) == "Isosceles"
 
 def test_scalene_triangle():
-    assert classify_triangle(3, 4, 5) == "Scalene"
+    assert classify_triangle(5, 7, 10) == "Scalene"
 
 def test_right_triangle():
     assert is_right_triangle(3, 4, 5) == True
     assert is_right_triangle(5, 5, 5* math.sqrt(2)) == True
+    assert is_right_triangle(3, 3, 3) == False
