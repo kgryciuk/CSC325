@@ -1,5 +1,5 @@
 import math
-from module6.triangle import is_valid_triangle, classify_triangle
+from triangle import is_valid_triangle, classify_triangle, is_right_triangle
 
 def test_is_valid_triangle():
     assert is_valid_triangle(3, 4, 5) == True
@@ -15,5 +15,5 @@ def test_scalene_triangle():
     assert classify_triangle(3, 4, 5) == "Scalene"
 
 def test_right_triangle():
-    assert classify_triangle(3, 4, 5) == "Right"
-    assert classify_triangle(5, 5, 5* math.sqrt(2)) == "Right"
+    assert is_right_triangle(3, 4, 5) == True
+    assert is_right_triangle(5, 5, 5* math.sqrt(2)) == True
