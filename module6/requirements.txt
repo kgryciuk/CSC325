@@ -1,4 +1,4 @@
 Requirements for triangle acceptance:
     test if the triangle is valid (the sum of two sides > than the third side and all sides > 0)
     test the classification of the triangle based on its side lengths (scalene, isosceles, equilateral)
-    test if the triangle is a right triangle (where: a^2 + b^2 = c^2, including a case with a non-integer side)
+and test if it is a right triangle (where: a^2 + b^2 = c^2, including a case with a non-integer side)
