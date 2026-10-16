@@ -1,4 +1,5 @@
 # Module 6
+you can
 test                        copilot suggested?   kept/edited/rejected        why
 test_is_valid_triangle      yes                  edited                      initialy didn't call the is_valid_triangle definition
 test_classify_triangle      yes                  rejected                    checked all 3 types of triangle in one
